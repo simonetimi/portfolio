@@ -1,5 +1,9 @@
 {
   "header": {
-    "title": "Hello world!"
+    "title": "Hello world!",
+    "about": "About me",
+    "stack": "My stack",
+    "projects": "Projects",
+    "contact": "Contact me"
   }
 }

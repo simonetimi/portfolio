@@ -1,5 +1,9 @@
 {
   "header": {
-    "title": "Ciao mondo!"
+    "title": "Ciao mondo!",
+    "about": "Su di me",
+    "stack": "Stack",
+    "projects": "Progetti",
+    "contact": "Contattami"
   }
 }

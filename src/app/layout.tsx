@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Quicksand } from 'next/font/google';
 
+import { Providers } from './providers';
+
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -31,6 +33,7 @@ export const metadata: Metadata = {
   ],
 };
 
+// body has the background tailwind styling so that there's no need for an additional wrapper
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,8 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${quicksand.className}`}>
-        {children}
+      <body
+        className={`${inter.className} ${quicksand.className} bg-background text-foreground bg-gradient-to-b from-gray-100 to-white dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900`}
+      >
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
