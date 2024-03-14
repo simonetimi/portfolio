@@ -33,16 +33,22 @@ export const metadata: Metadata = {
   ],
 };
 
+export async function generateStaticParams() {
+  return [{ lang: 'en' }, { lang: 'it' }];
+}
+
 // body has the background tailwind styling so that there's no need for an additional wrapper
 export default function RootLayout({
+  params,
   children,
 }: Readonly<{
+  params: { lang: string };
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang={params.lang} className="text-black dark:text-white">
       <body
-        className={`${inter.className} ${quicksand.className} bg-background text-foreground bg-gradient-to-b from-gray-100 to-white dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900`}
+        className={`${inter.className} ${quicksand.className} bg-background bg-gradient-to-b from-gray-100 to-white text-foreground dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900`}
       >
         <Providers>{children}</Providers>
       </body>

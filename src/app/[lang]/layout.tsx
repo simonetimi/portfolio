@@ -1,5 +1,6 @@
 import { getDictionary, Locale } from '@/app/helpers/dictionary';
 
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 type Props = {
@@ -18,7 +19,10 @@ export default async function MainLayout({
   return (
     <>
       <Header intl={intl} />
-      {children}
+      <main className="mx-10 my-14 flex h-screen flex-col items-center justify-between md:mx-52">
+        {children}
+      </main>
+      <Footer />
     </>
   );
 }

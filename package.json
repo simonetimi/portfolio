@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "commit": "cz",
-    "dev": "next dev --turbo",
+    "dev": "next dev",
     "lint": "next lint",
     "prettier": "prettier --plugin prettier-plugin-tailwindcss --write --ignore-unknown .",
     "start": "next start"

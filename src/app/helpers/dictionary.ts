@@ -1,4 +1,4 @@
-import 'server-only';
+'use server';
 
 export type Locale = keyof typeof dictionaries;
 
