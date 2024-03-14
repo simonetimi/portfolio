@@ -46,7 +46,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang={params.lang} className="text-black dark:text-white">
+    <html
+      lang={params.lang}
+      className="scroll-smooth text-black dark:text-white"
+    >
       <body
         className={`${inter.className} ${quicksand.className} bg-background bg-gradient-to-b from-gray-100 to-white text-foreground dark:bg-gradient-to-b dark:from-gray-800 dark:to-gray-900`}
       >

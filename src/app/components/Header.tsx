@@ -1,5 +1,6 @@
 'use client';
 import { User } from '@nextui-org/react';
+import Link from 'next/link';
 
 import ThemeSwitcher from '@/app/components/ThemeSwitcher';
 import { Dictionary } from '@/app/helpers/dictionary';
@@ -30,15 +31,23 @@ export default function Header({ intl }: IntlProps) {
           }}
         />
       </div>
-      <ul className="flex gap-2 text-sm md:gap-6 md:text-lg">
-        <li>{intl.header.about}</li>
-        <li>{intl.header.stack}</li>
-        <li>{intl.header.projects}</li>
-        <li>{intl.header.contact}</li>
+      <ul className="mr-10 flex gap-2 text-sm md:gap-6 md:text-lg">
+        <li className="transition-transform hover:scale-110">
+          <Link href="#intro">{intl.header.about}</Link>
+        </li>
+        <li className="transition-transform hover:scale-110">
+          <Link href="#intro">{intl.header.stack}</Link>
+        </li>
+        <li className="transition-transform hover:scale-110">
+          <Link href="#intro">{intl.header.projects}</Link>
+        </li>
+        <li className="transition-transform hover:scale-110">
+          <Link href="#intro">{intl.header.contact}</Link>
+        </li>
       </ul>
       <div className="ml-auto flex items-center gap-4">
-        <LanguageSwitcher className="flex gap-2" />
-        <ThemeSwitcher className="mt-1 transition-transform hover:scale-125" />
+        <LanguageSwitcher className="flex gap-2 transition-transform hover:scale-110" />
+        <ThemeSwitcher className="mt-1 transition-transform hover:scale-110" />
       </div>
     </header>
   );

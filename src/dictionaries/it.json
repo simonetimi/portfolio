@@ -1,9 +1,12 @@
 {
   "header": {
-    "title": "Ciao mondo!",
     "about": "Su di me",
     "stack": "Stack",
     "projects": "Progetti",
     "contact": "Contattami"
+  },
+  "intro": {
+    "title": "Ciao!",
+    "text": "Sono Simone Timi, sviluppatore web full stack con una passione per la tecnologia, la linguistica e lo studio del comportamento umano."
   }
 }

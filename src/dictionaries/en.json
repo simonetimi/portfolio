@@ -1,9 +1,12 @@
 {
   "header": {
-    "title": "Hello world!",
     "about": "About me",
     "stack": "My stack",
     "projects": "Projects",
     "contact": "Contact me"
+  },
+  "intro": {
+    "title": "Hello!",
+    "text": "My name is Simone Timi, I'm a full stack web developer with a passion for tech, linguistics and human behavior. "
   }
 }
