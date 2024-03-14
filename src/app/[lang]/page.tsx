@@ -9,7 +9,7 @@ type Props = {
 export default async function Home({ params: { lang } }: Props) {
   const intl = await getDictionary(lang);
   return (
-    <main className="flex h-screen flex-col items-center justify-between p-10">
+    <main className="mx-10 my-14 flex h-screen flex-col items-center justify-between md:mx-52">
       <h1>{intl.header.title}</h1>
       <p>
         HEllo hello hello hello hello hello hello hello hello hello hello hello{' '}

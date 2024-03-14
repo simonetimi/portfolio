@@ -23,8 +23,8 @@ export default function ThemeSwitcher({ className }: { className: string }) {
           <Image
             className="dark:invert"
             alt="Light Mode"
-            width={26}
-            height={26}
+            width={22}
+            height={22}
             src="./light.svg"
           />
         </button>
@@ -33,8 +33,8 @@ export default function ThemeSwitcher({ className }: { className: string }) {
           <Image
             className="dark:invert"
             alt="Dark Mode"
-            width={26}
-            height={26}
+            width={22}
+            height={22}
             src="./dark.svg"
           />
         </button>

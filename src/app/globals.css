@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  height: 0;
+}
+
 body {
   min-height: 100vh;
 }
