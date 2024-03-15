@@ -37,12 +37,12 @@ export default function Stack() {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
+    <div className="flex flex-wrap justify-center gap-6 lg:w-3/4">
       {list.map((item, index) => (
         <Card
           shadow="sm"
           key={index}
-          className="hover:animate-wiggle hover:animate-infinite dark:bg-gray-700"
+          className="hover:animate-wiggle hover:animate-infinite w-[160px] dark:bg-gray-700"
         >
           <CardBody className="overflow-visible p-0">
             <Image
