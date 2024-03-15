@@ -12,5 +12,8 @@
   "about": {
     "title": "About me",
     "text": "I'm a former speech-language pathologist diving headfirst into the world of web development! Why?\n I've always had a knack for solving puzzles and finding creative solutions. That's what initially drew me to web development, and it didn't disappoint me. There's a unique thrill in seeing a project come to life, no matter if the code works immediately or I have to spend hours debugging.\n My aim is to craft apps that are both highly functional and genuinely enjoyable to use. I understand the importance of intuitive design and strive for seamless user experiences.\n While my background may be a bit unconventional, my ability to think creatively and focus on the end-user remains strong. I'm eager to collaborate and build exceptional apps.\n If you're searching for a developer with a fresh perspective and dedication to quality, let's connect!"
+  },
+  "stack": {
+    "title": "My stack"
   }
 }

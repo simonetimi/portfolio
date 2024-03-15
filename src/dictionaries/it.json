@@ -12,5 +12,8 @@
   "about": {
     "title": "Su di me",
     "text": "Sono un logopedista che si è tuffato a capofitto nel mondo dello sviluppo web! Perché?\n Ho sempre avuto una passione per la risoluzione di problemi e la ricerca di soluzioni. In effetti è questo che inizialmente mi ha attratto verso lo sviluppo web, e se devo essere onesto, non mi ha deluso. C'è un brivido unico nel vedere un progetto prendere vita, sia quando il codice funziona al primo colpo che quando passi ore a fare debugging.\n Anche se il mio background non è esattamente convenzionale, sono sicuro che quanto appreso nella mia precedente professione sia una risorsa nel mondo dello sviluppo software. Non vedo l’ora di collaborare in progetti e aiutare a costruire app eccezionali.\n Se stai cercando uno sviluppatore con una prospettiva fresca e dedizione, contattami!"
+  },
+  "stack": {
+    "title": "Stack"
   }
 }

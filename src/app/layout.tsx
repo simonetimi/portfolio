@@ -16,20 +16,20 @@ export const metadata: Metadata = {
   title: 'Simone Timi - Full Stack Developer',
   description: 'Portfolio',
   icons: [
-    { rel: 'icon', url: '/icons/favicon.ico', type: 'image/x-icon' },
+    { rel: 'icon', url: 'icons/favicon.ico', type: 'image/x-icon' },
     {
       rel: 'icon',
-      url: '/icons/android-chrome-192x192.png',
+      url: 'icons/android-chrome-192x192.png',
       sizes: '192x192',
       type: 'image/png',
     },
     {
       rel: 'icon',
-      url: '/icons/android-chrome-512x512.png',
+      url: 'icons/android-chrome-512x512.png',
       sizes: '512x512',
       type: 'image/png',
     },
-    { rel: 'apple-touch-icon', url: '/icons/apple-touch-icon.png' },
+    { rel: 'apple-touch-icon', url: 'icons/apple-touch-icon.png' },
   ],
 };
 

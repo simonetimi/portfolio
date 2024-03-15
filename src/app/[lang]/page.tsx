@@ -4,6 +4,8 @@ import Link from 'next/link';
 
 import { getDictionary, Locale } from '@/app/helpers/dictionary';
 
+import Stack from '../components/Stack';
+
 type Props = {
   params: {
     lang: Locale;
@@ -106,7 +108,6 @@ export default async function Home({ params: { lang } }: Props) {
           </div>
         </Code>
       </section>
-
       <section
         id="about"
         lang={lang}
@@ -116,6 +117,16 @@ export default async function Home({ params: { lang } }: Props) {
           {intl.about.title}
         </h1>
         <p className="hyphens-auto text-justify lg:w-3/5">{intl.about.text}</p>
+      </section>
+      <section
+        id="stack"
+        lang={lang}
+        className="flex scroll-mt-20 flex-col items-center gap-14"
+      >
+        <h1 className="text-3xl underline decoration-amber-400 underline-offset-8">
+          {intl.stack.title}
+        </h1>
+        <Stack />
       </section>
     </>
   );
