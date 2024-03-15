@@ -3,7 +3,7 @@
     "about": "Su di me",
     "stack": "Stack",
     "projects": "Progetti",
-    "contact": "Contattami"
+    "contacts": "Contattami"
   },
   "intro": {
     "title": "Ciao!",
@@ -15,5 +15,42 @@
   },
   "stack": {
     "title": "Stack"
+  },
+  "projects": {
+    "title": "Progetti",
+    "projectOne": {
+      "title": "Blog App",
+      "text": "Progetto Full Stack con autenticazione e MongoDB. Scritto interamente in TypeScript con NextJS.",
+      "github": "https://github.com/simonetimi/blog-app",
+      "deployement": "https://inkwell-insights-blog.vercel.app/"
+    },
+    "projectTwo": {
+      "title": "Message Board",
+      "text": "App dove postare e leggere messaggi anonimi degli utenti. Backend sviluppato con Express.",
+      "github": "https://github.com/simonetimi/message-board",
+      "deployement": "https://mini-message-board-lit.onrender.com/"
+    },
+    "projectThree": {
+      "title": "Weather App",
+      "text": "App meteo con previsioni fino a 7 giorni. Scritto originariamente in JavaScript e riscritto in Typescript.",
+      "github": "https://github.com/simonetimi/weather-app",
+      "deployement": "https://simonetimi.github.io/weather-app/"
+    },
+    "projectFour": {
+      "title": "Token Bag App",
+      "text": "Companion app per il gioco di ruolo Koriko. Offre la possibilità di salvare la sessione in locale. Scritto con React e Next.js.",
+      "github": "https://github.com/simonetimi/token-app-rpg",
+      "deployement": "https://token-app-rpg.vercel.app/"
+    },
+    "projectFive": {
+      "title": "Pokémon Memory Game",
+      "text": "Gioco di memoria in cui il giocatore non deve mai premere lo stesso Pokémon due volte. Scritto con React.",
+      "github": "https://github.com/simonetimi/memory-game",
+      "deployement": "https://gottacatch-memory.netlify.app//"
+    }
+  },
+  "contacts": {
+    "title": "Contattami",
+    "text": "Sono alla ricerca di collaborazioni e oppurtunità interessanti! Sei hai progetto da proporre al quale poter contribuire, contattami a:"
   }
 }

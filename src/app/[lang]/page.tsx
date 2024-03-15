@@ -1,9 +1,10 @@
-import { Button, Code } from '@nextui-org/react';
+import { Button, Code, Link as LinkUi } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import { getDictionary, Locale } from '@/app/helpers/dictionary';
 
+import ProjectCard from '../components/Project-Card';
 import Stack from '../components/Stack';
 
 type Props = {
@@ -29,8 +30,8 @@ export default async function Home({ params: { lang } }: Props) {
           <div className="self-center">
             <Image
               alt="Simone's portrait"
-              width={300}
-              height={300}
+              width={280}
+              height={280}
               src="/simone.jpg"
               className="rounded-full"
             />
@@ -120,13 +121,79 @@ export default async function Home({ params: { lang } }: Props) {
       </section>
       <section
         id="stack"
-        lang={lang}
         className="flex scroll-mt-20 flex-col items-center gap-14"
       >
         <h1 className="text-3xl underline decoration-amber-400 underline-offset-8">
           {intl.stack.title}
         </h1>
         <Stack />
+      </section>
+      <section
+        id="projects"
+        lang={lang}
+        className="flex scroll-mt-20 flex-col items-center gap-14"
+      >
+        <h1 className="text-3xl underline decoration-amber-400 underline-offset-8">
+          {intl.projects.title}
+        </h1>
+        <div className="flex flex-wrap justify-center gap-6">
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectOne.title}
+            text={intl.projects.projectOne.text}
+            githubLink={intl.projects.projectOne.github}
+            deployLink={intl.projects.projectOne.deployement}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectTwo.title}
+            text={intl.projects.projectTwo.text}
+            githubLink={intl.projects.projectTwo.github}
+            deployLink={intl.projects.projectTwo.deployement}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectThree.title}
+            text={intl.projects.projectThree.text}
+            githubLink={intl.projects.projectThree.github}
+            deployLink={intl.projects.projectThree.deployement}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectFour.title}
+            text={intl.projects.projectFour.text}
+            githubLink={intl.projects.projectFour.github}
+            deployLink={intl.projects.projectFour.deployement}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectFive.title}
+            text={intl.projects.projectFive.text}
+            githubLink={intl.projects.projectFive.github}
+            deployLink={intl.projects.projectFive.deployement}
+          />
+        </div>
+      </section>
+      <section
+        id="contacts"
+        lang={lang}
+        className="flex scroll-mt-20 flex-col items-center gap-14"
+      >
+        <h1 className="text-3xl underline decoration-amber-400 underline-offset-8">
+          {intl.contacts.title}
+        </h1>
+        <div className="flex flex-col items-center">
+          <p className="mb-4 hyphens-auto text-justify lg:w-3/5">
+            {intl.contacts.text}
+          </p>
+          <LinkUi
+            isBlock
+            color="primary"
+            href="mailto:simonetimi.dev@gmail.com"
+          >
+            simonetimi.dev@gmail.com
+          </LinkUi>
+        </div>
       </section>
     </>
   );

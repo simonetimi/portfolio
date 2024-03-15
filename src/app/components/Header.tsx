@@ -38,7 +38,7 @@ function Menu({ intl }: IntlProps) {
           {intl.header.projects}
         </DropdownItem>
         <DropdownItem key="contact" href="#contact">
-          {intl.header.contact}
+          {intl.header.contacts}
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -78,7 +78,7 @@ export default function Header({ intl }: IntlProps) {
           <Link href="#projects">{intl.header.projects}</Link>
         </li>
         <li className="transition-transform hover:scale-110">
-          <Link href="#contact">{intl.header.contact}</Link>
+          <Link href="#contacts">{intl.header.contacts}</Link>
         </li>
       </ul>
       <div className="ml-auto flex items-center gap-4">

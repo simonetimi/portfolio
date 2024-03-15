@@ -3,7 +3,7 @@
     "about": "About me",
     "stack": "My stack",
     "projects": "Projects",
-    "contact": "Contact me"
+    "contacts": "Contact me"
   },
   "intro": {
     "title": "Hello!",
@@ -15,5 +15,42 @@
   },
   "stack": {
     "title": "My stack"
+  },
+  "projects": {
+    "title": "Projects",
+    "projectOne": {
+      "title": "Blog App",
+      "text": "Full stack project with secure authentication and MongoDB integration. Written entirely in TypeScript with NextJS.",
+      "github": "https://github.com/simonetimi/blog-app",
+      "deployement": "https://inkwell-insights-blog.vercel.app/"
+    },
+    "projectTwo": {
+      "title": "Message Board",
+      "text": "App for posting and reading messages, with secure authentication. Backend developed with Express.",
+      "github": "https://github.com/simonetimi/message-board",
+      "deployement": "https://mini-message-board-lit.onrender.com/"
+    },
+    "projectThree": {
+      "title": "Weather App",
+      "text": "Minimalistic weather app with 7-days forecast. Originally written in JavaScript and re-written in Typescript.",
+      "github": "https://github.com/simonetimi/weather-app",
+      "deployement": "https://simonetimi.github.io/weather-app/"
+    },
+    "projectFour": {
+      "title": "Token Bag App",
+      "text": "Simple companion app for the RPG-game Koriko. It offers the ability to save the user's session on local storage. Written in React and Next.js.",
+      "github": "https://github.com/simonetimi/token-app-rpg",
+      "deployement": "https://token-app-rpg.vercel.app/"
+    },
+    "projectFive": {
+      "title": "Pokémon Memory Game",
+      "text": "Memory game where the player must never click on the same Pokémon twice. Written in React.",
+      "github": "https://github.com/simonetimi/memory-game",
+      "deployement": "https://gottacatch-memory.netlify.app//"
+    }
+  },
+  "contacts": {
+    "title": "Contact me",
+    "text": "Seeking exciting collaborations and opportunities! If you have a project where my skills could be an asset, let's connect. You can reach me at:"
   }
 }

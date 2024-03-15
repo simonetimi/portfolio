@@ -34,6 +34,10 @@ export default function Stack() {
       title: 'Express',
       img: 'images/express.png',
     },
+    {
+      title: 'Tailwind',
+      img: 'images/tw.png',
+    },
   ];
 
   return (
@@ -42,7 +46,7 @@ export default function Stack() {
         <Card
           shadow="sm"
           key={index}
-          className="hover:animate-wiggle hover:animate-infinite w-[160px] dark:bg-gray-700"
+          className="hover:animate-wiggle hover:animate-infinite h-auto w-[100px] dark:bg-gray-800"
         >
           <CardBody className="overflow-visible p-0">
             <Image
@@ -50,7 +54,7 @@ export default function Stack() {
               radius="lg"
               width="100%"
               alt={item.title}
-              className="h-[140px] w-full object-cover"
+              className="w-full object-cover"
               src={item.img}
             />
           </CardBody>
