@@ -12,9 +12,9 @@ function LanguageSwitcher({ className }: { className: string }) {
   return (
     <div className={className}>
       {params.lang === 'it' ? (
-        <button onClick={() => switchLang('en')}>ENG</button>
+        <button onClick={() => switchLang('en')}>EN</button>
       ) : (
-        <button onClick={() => switchLang('it')}>ITA</button>
+        <button onClick={() => switchLang('it')}>IT</button>
       )}
     </div>
   );

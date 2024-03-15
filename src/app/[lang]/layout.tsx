@@ -19,7 +19,7 @@ export default async function MainLayout({
   return (
     <>
       <Header intl={intl} />
-      <main className="mx-10 flex flex-col items-center justify-center whitespace-pre-line md:mx-52">
+      <main className="mx-10 flex flex-col items-center justify-center gap-20 whitespace-pre-line md:mx-52">
         {children}
       </main>
       <Footer />
