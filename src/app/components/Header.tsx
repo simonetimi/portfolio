@@ -1,5 +1,14 @@
 'use client';
+import { Bars3Icon } from '@heroicons/react/24/outline';
 import { User } from '@nextui-org/react';
+import {
+  Button,
+  Dropdown,
+  DropdownItem,
+  DropdownMenu,
+  DropdownSection,
+  DropdownTrigger,
+} from '@nextui-org/react';
 import Link from 'next/link';
 
 import ThemeSwitcher from '@/app/components/ThemeSwitcher';
@@ -11,13 +20,47 @@ interface IntlProps {
   intl: Dictionary<string>;
 }
 
+function Menu({ intl }: IntlProps) {
+  return (
+    <Dropdown>
+      <DropdownTrigger>
+        <Button isIconOnly variant="light" size="sm" aria-label="Open Menu">
+          <Bars3Icon />
+        </Button>
+      </DropdownTrigger>
+      <DropdownMenu aria-label="Site navigator">
+        <DropdownSection showDivider>
+          <DropdownItem key="intro" href="#intro">
+            {intl.header.about}
+          </DropdownItem>
+          <DropdownItem key="stack" href="#intro">
+            {intl.header.stack}
+          </DropdownItem>
+          <DropdownItem key="projects" href="#intro">
+            {intl.header.projects}
+          </DropdownItem>
+          <DropdownItem key="contact" href="#intro">
+            {intl.header.contact}
+          </DropdownItem>
+        </DropdownSection>
+        <DropdownItem key="contact">
+          <LanguageSwitcher className="" />
+        </DropdownItem>
+        <DropdownItem key="contact">
+          <ThemeSwitcher className="" />
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  );
+}
+
 export default function Header({ intl }: IntlProps) {
   return (
     <header
       className="sticky top-0 z-40 flex h-14 w-screen items-center border-b-1 border-gray-200 bg-white/20 p-6 backdrop-blur-md dark:border-white/20 
         dark:bg-gray-900/40 dark:backdrop-blur"
     >
-      <div className="mr-auto mt-1 text-base md:text-lg">
+      <div className="mr-auto mt-1 text-lg">
         <User
           className=""
           name="Simone Timi"
@@ -31,7 +74,7 @@ export default function Header({ intl }: IntlProps) {
           }}
         />
       </div>
-      <ul className="mr-10 flex gap-2 text-sm md:gap-6 md:text-lg">
+      <ul className="mr-10 hidden gap-6 text-lg md:flex">
         <li className="transition-transform hover:scale-110">
           <Link href="#intro">{intl.header.about}</Link>
         </li>
@@ -45,9 +88,12 @@ export default function Header({ intl }: IntlProps) {
           <Link href="#intro">{intl.header.contact}</Link>
         </li>
       </ul>
-      <div className="ml-auto flex items-center gap-4">
-        <LanguageSwitcher className="flex gap-2 transition-transform hover:scale-110" />
+      <div className="ml-auto hidden items-center gap-4 md:flex">
+        <LanguageSwitcher className="gap-2 transition-transform hover:scale-110" />
         <ThemeSwitcher className="mt-1 transition-transform hover:scale-110" />
+      </div>
+      <div className="ml-auto flex md:hidden">
+        <Menu intl={intl} />
       </div>
     </header>
   );
