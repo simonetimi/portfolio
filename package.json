@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -20,17 +20,13 @@
     "@heroicons/react": "^2.1.1",
     "@nextui-org/react": "^2.2.10",
     "eslint-plugin-simple-import-sort": "^12.0.0",
-    "mongoose": "^8.1.3",
     "negotiator": "^0.6.3",
     "next": "^14.1.3",
     "next-themes": "^0.3.0",
-    "nodemailer": "^6.9.9",
     "npm": "^10.5.0",
     "react": "^18",
     "react-dom": "^18",
-    "tailwindcss-animated": "^1.0.1",
-    "use-debounce": "^10.0.0",
-    "yup": "^1.3.3"
+    "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
     "@types/negotiator": "^0.6.3",

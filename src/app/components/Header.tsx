@@ -16,7 +16,7 @@ import { Dictionary } from '@/app/helpers/dictionary';
 import LanguageSwitcher from './LanguageSwitcher';
 
 interface IntlProps {
-  intl: Dictionary<string>;
+  intl: Dictionary;
 }
 
 function Menu({ intl }: IntlProps) {
