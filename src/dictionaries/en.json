@@ -3,7 +3,7 @@
     "about": "About me",
     "stack": "My stack",
     "projects": "Projects",
-    "contacts": "Contact me"
+    "contact": "Contact me"
   },
   "intro": {
     "title": "Hello!",
@@ -49,7 +49,7 @@
       "deployement": "https://gottacatch-memory.netlify.app//"
     }
   },
-  "contacts": {
+  "contact": {
     "title": "Contact me",
     "text": "Seeking exciting collaborations and opportunities! If you have a project where my skills could be an asset, let's connect. You can reach me at:"
   }

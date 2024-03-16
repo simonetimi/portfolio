@@ -3,7 +3,7 @@
     "about": "Su di me",
     "stack": "Stack",
     "projects": "Progetti",
-    "contacts": "Contattami"
+    "contact": "Contattami"
   },
   "intro": {
     "title": "Ciao!",
@@ -49,7 +49,7 @@
       "deployement": "https://gottacatch-memory.netlify.app//"
     }
   },
-  "contacts": {
+  "contact": {
     "title": "Contattami",
     "text": "Sono alla ricerca di collaborazioni e oppurtunità interessanti! Sei hai progetto da proporre al quale poter contribuire, contattami a:"
   }

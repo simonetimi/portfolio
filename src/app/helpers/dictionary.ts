@@ -19,7 +19,7 @@ export interface Dictionary {
     about: string;
     stack: string;
     projects: string;
-    contacts: string;
+    contact: string;
   };
   intro: {
     title: string;
@@ -33,7 +33,7 @@ export interface Dictionary {
   projects: {
     [key: string]: string | { [key: string]: string };
   };
-  contacts: {
+  contact: {
     title: string;
     text: string;
   };

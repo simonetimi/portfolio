@@ -52,10 +52,10 @@ function Menu({ intl }: IntlProps) {
             <p className="text-base">{intl.header.projects}</p>
           </div>
         </DropdownItem>
-        <DropdownItem key="contacts" href="#contacts">
+        <DropdownItem key="contact" href="#contact">
           <div className="flex gap-2">
             <AtSymbolIcon className="h-6 w-6" />
-            <p className="text-base">{intl.header.contacts}</p>
+            <p className="text-base">{intl.header.contact}</p>
           </div>
         </DropdownItem>
       </DropdownMenu>
@@ -96,7 +96,7 @@ export default function Header({ intl }: IntlProps) {
           <Link href="#projects">{intl.header.projects}</Link>
         </li>
         <li className="transition-transform hover:scale-110">
-          <Link href="#contacts">{intl.header.contacts}</Link>
+          <Link href="#contact">{intl.header.contact}</Link>
         </li>
       </ul>
       <div className="ml-auto flex items-center gap-2">

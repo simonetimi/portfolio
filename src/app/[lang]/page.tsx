@@ -175,16 +175,16 @@ export default async function Home({ params: { lang } }: Props) {
         </div>
       </section>
       <section
-        id="contacts"
+        id="contact"
         lang={lang}
         className="flex scroll-mt-20 flex-col items-center gap-14"
       >
         <h1 className="text-3xl underline decoration-amber-400 underline-offset-8">
-          {intl.contacts.title}
+          {intl.contact.title}
         </h1>
         <div className="flex flex-col items-center">
           <p className="mb-4 hyphens-auto text-justify lg:w-3/5">
-            {intl.contacts.text}
+            {intl.contact.text}
           </p>
           <LinkUi
             isBlock
