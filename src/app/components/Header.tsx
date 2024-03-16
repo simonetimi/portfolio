@@ -101,7 +101,7 @@ export default function Header({ intl }: IntlProps) {
       </ul>
       <div className="ml-auto flex items-center gap-2">
         <LanguageSwitcher className="flex h-7 w-7 items-center justify-center gap-2 rounded-full transition-transform hover:scale-110 hover:bg-gray-200 dark:hover:bg-gray-700" />
-        <ThemeSwitcher className=" mt-1 flex h-7 w-7 items-center justify-center rounded-full transition-transform hover:scale-110 hover:bg-gray-200 dark:hover:bg-gray-700" />
+        <ThemeSwitcher className=" mt-1" />
         <div className="ml-auto flex md:hidden">
           <Menu intl={intl} />
         </div>
