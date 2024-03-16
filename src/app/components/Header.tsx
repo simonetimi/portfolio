@@ -52,7 +52,7 @@ function Menu({ intl }: IntlProps) {
             <p className="text-base">{intl.header.projects}</p>
           </div>
         </DropdownItem>
-        <DropdownItem key="contact" href="#contact">
+        <DropdownItem key="contacts" href="#contacts">
           <div className="flex gap-2">
             <AtSymbolIcon className="h-6 w-6" />
             <p className="text-base">{intl.header.contacts}</p>
