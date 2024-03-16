@@ -22,9 +22,15 @@ const config: Config = {
           '60%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
         },
+        pop: {
+          '0%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1)' },
+        },
       },
       animation: {
         'waving-hand': 'wave 2s linear infinite',
+        pop: 'pop 0.7s ease-in-out',
       },
       fontFamily: {
         quicksand: ['var(--font-quicksand'],

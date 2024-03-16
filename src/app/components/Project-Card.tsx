@@ -18,7 +18,7 @@ export default function ProjectCard({
   [key: string]: string;
 }) {
   return (
-    <Card className="max-w-[400px] hover:animate-jump">
+    <Card className="hover:animate-pop max-w-[400px] dark:bg-gray-800">
       <CardHeader className="flex gap-3">
         <div className="flex flex-col justify-center">
           <p className="text-md">{title}</p>
