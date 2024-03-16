@@ -23,7 +23,7 @@ export default async function Home({ params: { lang } }: Props) {
         className="mt-10 flex scroll-mt-20 flex-col items-center gap-16"
       >
         <h1 className="text-3xl">
-          {intl.intro.title}{' '}
+          {intl.intro.title}
           <span className="inline-block animate-waving-hand">👋</span>
         </h1>
         <div className="flex w-full flex-wrap items-center justify-center gap-8">
@@ -36,7 +36,7 @@ export default async function Home({ params: { lang } }: Props) {
               className="rounded-full"
             />
           </div>
-          <div className="flex flex-col gap-8 lg:w-2/5">
+          <div className="flex w-4/5 flex-col gap-8 lg:w-2/5">
             <p className="hyphens-auto text-justify">{intl.intro.text}</p>
             <div className="flex justify-center gap-4">
               <Link href="https://github.com/simonetimi" target="_blank">
@@ -73,7 +73,7 @@ export default async function Home({ params: { lang } }: Props) {
           </div>
         </div>
         <Code className="w-[99.5%] md:w-auto" color="primary">
-          <div className="mx-2 w-[99.5%] text-[0.75rem] text-rose-500 [word-spacing:-0.1rem] dark:text-rose-600 md:w-auto md:text-sm md:[word-spacing:0;]">
+          <div className="mx-2 w-[95%] text-[0.65rem] text-rose-500 [word-spacing:-0.3rem] dark:text-rose-600 md:w-auto md:text-sm md:[word-spacing:0;]">
             <span className="text-sky-500 dark:text-sky-300">function </span>
             <span className="text-green-500 dark:text-green-400">
               {' '}

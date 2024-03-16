@@ -1,5 +1,11 @@
 'use client';
-import { Bars3Icon } from '@heroicons/react/24/outline';
+import {
+  Bars3Icon,
+  RectangleStackIcon,
+  UserIcon,
+} from '@heroicons/react/24/outline';
+import { AtSymbolIcon } from '@heroicons/react/24/outline';
+import { CommandLineIcon } from '@heroicons/react/24/outline';
 import { User } from '@nextui-org/react';
 import {
   Button,
@@ -29,16 +35,28 @@ function Menu({ intl }: IntlProps) {
       </DropdownTrigger>
       <DropdownMenu aria-label="Site navigator">
         <DropdownItem key="about" href="#about">
-          {intl.header.about}
+          <div className="flex gap-2">
+            <UserIcon className="h-6 w-6" />
+            <p className="text-base">{intl.header.about}</p>
+          </div>
         </DropdownItem>
         <DropdownItem key="stack" href="#stack">
-          {intl.header.stack}
+          <div className="flex gap-2">
+            <RectangleStackIcon className="h-6 w-6" />
+            <p className="text-base">{intl.header.stack}</p>
+          </div>
         </DropdownItem>
         <DropdownItem key="projects" href="#projects">
-          {intl.header.projects}
+          <div className="flex gap-2">
+            <CommandLineIcon className="h-6 w-6" />
+            <p className="text-base">{intl.header.projects}</p>
+          </div>
         </DropdownItem>
         <DropdownItem key="contact" href="#contact">
-          {intl.header.contacts}
+          <div className="flex gap-2">
+            <AtSymbolIcon className="h-6 w-6" />
+            <p className="text-base">{intl.header.contacts}</p>
+          </div>
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -81,9 +99,9 @@ export default function Header({ intl }: IntlProps) {
           <Link href="#contacts">{intl.header.contacts}</Link>
         </li>
       </ul>
-      <div className="ml-auto flex items-center gap-4">
-        <LanguageSwitcher className="gap-2 transition-transform hover:scale-110" />
-        <ThemeSwitcher className="mt-1 transition-transform hover:scale-110" />
+      <div className="ml-auto flex items-center gap-2">
+        <LanguageSwitcher className="flex h-7 w-7 items-center justify-center gap-2 rounded-full transition-transform hover:scale-110 hover:bg-gray-200 dark:hover:bg-gray-700" />
+        <ThemeSwitcher className=" mt-1 flex h-7 w-7 items-center justify-center rounded-full transition-transform hover:scale-110 hover:bg-gray-200 dark:hover:bg-gray-700" />
         <div className="ml-auto flex md:hidden">
           <Menu intl={intl} />
         </div>
