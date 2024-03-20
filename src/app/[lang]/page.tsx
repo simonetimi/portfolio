@@ -142,35 +142,42 @@ export default async function Home({ params: { lang } }: Props) {
             title={intl.projects.projectOne.title}
             text={intl.projects.projectOne.text}
             githubLink={intl.projects.projectOne.github}
-            deployLink={intl.projects.projectOne.deployement}
+            deployLink={intl.projects.projectOne.deployment}
           />
           <ProjectCard
             lang={lang}
             title={intl.projects.projectTwo.title}
             text={intl.projects.projectTwo.text}
             githubLink={intl.projects.projectTwo.github}
-            deployLink={intl.projects.projectTwo.deployement}
+            deployLink={intl.projects.projectTwo.deployment}
           />
           <ProjectCard
             lang={lang}
             title={intl.projects.projectThree.title}
             text={intl.projects.projectThree.text}
             githubLink={intl.projects.projectThree.github}
-            deployLink={intl.projects.projectThree.deployement}
+            deployLink={intl.projects.projectThree.deployment}
           />
           <ProjectCard
             lang={lang}
             title={intl.projects.projectFour.title}
             text={intl.projects.projectFour.text}
             githubLink={intl.projects.projectFour.github}
-            deployLink={intl.projects.projectFour.deployement}
+            deployLink={intl.projects.projectFour.deployment}
           />
           <ProjectCard
             lang={lang}
             title={intl.projects.projectFive.title}
             text={intl.projects.projectFive.text}
             githubLink={intl.projects.projectFive.github}
-            deployLink={intl.projects.projectFive.deployement}
+            deployLink={intl.projects.projectFive.deployment}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectSix.title}
+            text={intl.projects.projectSix.text}
+            githubLink={intl.projects.projectSix.github}
+            deployLink={intl.projects.projectSix.deployment}
           />
         </div>
       </section>
