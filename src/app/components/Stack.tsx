@@ -38,6 +38,14 @@ export default function Stack() {
       title: 'Tailwind CSS',
       img: 'images/tw.png',
     },
+    {
+      title: 'Mongo DB',
+      img: 'images/mongodb.png',
+    },
+    {
+      title: 'PostgreSQL',
+      img: 'images/postgresql.png',
+    },
   ];
 
   return (
