@@ -13,15 +13,6 @@ export default function Footer() {
           height={24}
         />
       </Link>
-      <Link href="https://linkedin.com/in/simonetimi" target="_blank">
-        <Image
-          alt="Linkedin logo"
-          src="linkedin.svg"
-          className="transition-transform hover:scale-105 dark:invert"
-          width={24}
-          height={24}
-        />
-      </Link>
     </footer>
   );
 }

@@ -38,7 +38,7 @@ export default async function Home({ params: { lang } }: Props) {
           </div>
           <div className="flex w-4/5 flex-col gap-8 lg:w-2/5">
             <p className="hyphens-auto text-justify">{intl.intro.text}</p>
-            <div className="flex justify-center gap-4">
+            <div className="flex gap-4">
               <Link href="https://github.com/simonetimi" target="_blank">
                 <Button
                   variant="flat"
@@ -48,21 +48,6 @@ export default async function Home({ params: { lang } }: Props) {
                   <Image
                     alt="GitHub logo"
                     src="github-mark.svg"
-                    className="transition-transform hover:scale-105 dark:invert"
-                    width={24}
-                    height={24}
-                  />
-                </Button>
-              </Link>
-              <Link href="https://linkedin.com/in/simonetimi" target="_blank">
-                <Button
-                  variant="flat"
-                  className="w-28 transition-transform hover:scale-105"
-                >
-                  Linkedin
-                  <Image
-                    alt="Linkedin logo"
-                    src="linkedin.svg"
                     className="transition-transform hover:scale-105 dark:invert"
                     width={24}
                     height={24}
@@ -85,23 +70,23 @@ export default async function Home({ params: { lang } }: Props) {
             <span className="text-pink-400">speechPathologist</span> ===
             <span className="text-amber-500 dark:text-amber-400">
               {' '}
-              &quot;Simone&quot;
+              &apos;Simone&apos;
             </span>
             <span className="text-orange-400">)</span>{' '}
             <span className="text-orange-400">&#123;</span>
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;return{' '}
             <span className="text-amber-500 dark:text-amber-400">
-              &quot;Congratulations! You&apos;re now a web developer.&quot;
+              &apos;Congratulations! You&apos;re now a web developer.&apos;
             </span>
             <br />
             &nbsp;&nbsp;<span className="text-orange-400">
               &#125;
             </span> else <span className="text-orange-400">&#123;</span> <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;return{' '}
+            &nbsp;&nbsp;&nbsp;&nbsp;throw new Error(
             <span className="text-amber-500 dark:text-amber-400">
-              &quot;Oops! Bad request.&quot;
-            </span>{' '}
+              &apos;Oops! Bad request.&apos;
+            </span>){' '}
             <br />
             &nbsp;&nbsp;<span className="text-orange-400">&#125;</span>
             <br />
