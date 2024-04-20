@@ -13,7 +13,7 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: 'Simone Timi - Full Stack Developer',
+  title: 'Simone Timi - Full stack developer',
   description: 'Portfolio',
   icons: [
     { rel: 'icon', url: 'icons/favicon.ico', type: 'image/x-icon' },
