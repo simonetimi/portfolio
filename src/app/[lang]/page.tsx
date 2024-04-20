@@ -33,7 +33,8 @@ export default async function Home({ params: { lang } }: Props) {
               width={280}
               height={280}
               src="/simone.jpg"
-              className="rounded-full"
+              className="rounded-full h-[280px] w-[280px]"
+              priority
             />
           </div>
           <div className="flex w-4/5 flex-col gap-8 lg:w-2/5">
