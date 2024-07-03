@@ -46,6 +46,14 @@ export default function Stack() {
       title: 'PostgreSQL',
       img: 'images/postgresql.png',
     },
+    {
+      title: 'Python',
+      img: 'images/python.png',
+    },
+    {
+      title: 'Flask',
+      img: 'images/flask.png',
+    },
   ];
 
   return (

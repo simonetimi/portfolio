@@ -53,6 +53,18 @@
       "text": "Questa stessa pagina è stata scritta in TypeScript/React con Next.js.",
       "github": "https://github.com/simonetimi/portfolio",
       "deployment": "https://simonetimi.com/"
+    },
+    "projectSeven": {
+      "title": "Trivia Quiz App",
+      "text": "Gioco a quiz configurabile per difficoltà e categorie. Salva il nome del giocatore e il miglior punteggio nella memoria locale.",
+      "github": "https://github.com/simonetimi/cs50x-final-project",
+      "deployment": "https://trivia-quiz-app-cs50x.vercel.app/"
+    },
+    "projectEight": {
+      "title": "Template Next.js Full Stack con Auth.js e Prisma",
+      "text": "Template Full Stack per la creazione di app web con framework next.js, libreria auth.js per l'autenticazione e la sessione utente e ORM Prisma per la connessione al database.",
+      "github": "https://github.com/simonetimi/nextjs-authjs-template",
+      "deployment": ""
     }
   },
   "contact": {

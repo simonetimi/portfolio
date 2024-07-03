@@ -33,7 +33,7 @@ export default async function Home({ params: { lang } }: Props) {
               width={280}
               height={280}
               src="/simone.jpg"
-              className="rounded-full h-[280px] w-[280px]"
+              className="h-[280px] w-[280px] rounded-full"
               priority
             />
           </div>
@@ -87,8 +87,8 @@ export default async function Home({ params: { lang } }: Props) {
             &nbsp;&nbsp;&nbsp;&nbsp;throw new Error(
             <span className="text-amber-500 dark:text-amber-400">
               &apos;Oops! Bad request.&apos;
-            </span>){' '}
-            <br />
+            </span>
+            ) <br />
             &nbsp;&nbsp;<span className="text-orange-400">&#125;</span>
             <br />
             &#125;
@@ -164,6 +164,20 @@ export default async function Home({ params: { lang } }: Props) {
             text={intl.projects.projectSix.text}
             githubLink={intl.projects.projectSix.github}
             deployLink={intl.projects.projectSix.deployment}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectSeven.title}
+            text={intl.projects.projectSeven.text}
+            githubLink={intl.projects.projectSeven.github}
+            deployLink={intl.projects.projectSix.deployment}
+          />
+          <ProjectCard
+            lang={lang}
+            title={intl.projects.projectEight.title}
+            text={intl.projects.projectEight.text}
+            githubLink={intl.projects.projectEight.github}
+            deployLink={intl.projects.projectEight.deployment}
           />
         </div>
       </section>
