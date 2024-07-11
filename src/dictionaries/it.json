@@ -18,53 +18,59 @@
   },
   "projects": {
     "title": "Progetti",
-    "projectOne": {
+    "project1": {
       "title": "Blog App",
       "text": "Progetto Full Stack con autenticazione e MongoDB. Scritto interamente in TypeScript con Next.js.",
       "github": "https://github.com/simonetimi/blog-app",
       "deployment": "https://inkwell-insights-blog.vercel.app/"
     },
-    "projectTwo": {
+    "project2": {
       "title": "Message Board",
       "text": "App dove postare e leggere messaggi anonimi degli utenti. Backend sviluppato con Express.",
       "github": "https://github.com/simonetimi/message-board",
       "deployment": "https://mini-message-board-lit.onrender.com/"
     },
-    "projectThree": {
+    "project3": {
       "title": "Weather App",
       "text": "App meteo con previsioni fino a 7 giorni. Scritto originariamente in JavaScript e riscritto in Typescript.",
       "github": "https://github.com/simonetimi/weather-app",
       "deployment": "https://simonetimi.github.io/weather-app/"
     },
-    "projectFour": {
+    "project4": {
       "title": "Token Bag App",
       "text": "Companion app per il gioco di ruolo Koriko. Offre la possibilità di salvare la sessione in locale. Scritto con React e Next.js.",
       "github": "https://github.com/simonetimi/token-app-rpg",
       "deployment": "https://token-app-rpg.vercel.app/"
     },
-    "projectFive": {
+    "project5": {
       "title": "Pokémon Memory Game",
       "text": "Gioco di memoria in cui il giocatore non deve mai premere lo stesso Pokémon due volte. Scritto con React.",
       "github": "https://github.com/simonetimi/memory-game",
       "deployment": "https://gottacatch-memory.netlify.app/"
     },
-    "projectSix": {
+    "project6": {
       "title": "Portfolio",
       "text": "Questa stessa pagina è stata scritta in TypeScript/React con Next.js.",
       "github": "https://github.com/simonetimi/portfolio",
       "deployment": "https://simonetimi.com/"
     },
-    "projectSeven": {
+    "project7": {
       "title": "Trivia Quiz App",
       "text": "Gioco a quiz configurabile per difficoltà e categorie. Salva il nome del giocatore e il miglior punteggio nella memoria locale.",
       "github": "https://github.com/simonetimi/cs50x-final-project",
       "deployment": "https://trivia-quiz-app-cs50x.vercel.app/"
     },
-    "projectEight": {
+    "project8": {
       "title": "Template Next.js Full Stack con Auth.js e Prisma",
       "text": "Template Full Stack per la creazione di app web con framework next.js, libreria auth.js per l'autenticazione e la sessione utente e ORM Prisma per la connessione al database.",
       "github": "https://github.com/simonetimi/nextjs-authjs-template",
       "deployment": ""
+    },
+    "project9": {
+      "title": "Cattify: estensione Google Chrome",
+      "text": "Estensione per Google Chrome che sostituisce le parole \"gatto\" e le sue varianti nell'emoji 🐈. Supporta l'italiano, l'inglese e l'estone.",
+      "github": "https://github.com/simonetimi/cattify",
+      "deployment": "https://chromewebstore.google.com/detail/cattify/ookjmgdpnbnecfimlmaklielebpmlida"
     }
   },
   "contact": {

@@ -2,7 +2,7 @@ import { Button, Code, Link as LinkUi } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { getDictionary, Locale } from '@/app/helpers/dictionary';
+import { Dictionary, getDictionary, Locale } from '@/app/helpers/dictionary';
 
 import ProjectCard from '../components/Project-Card';
 import Stack from '../components/Stack';
@@ -14,7 +14,14 @@ type Props = {
 };
 
 export default async function Home({ params: { lang } }: Props) {
-  const intl = await getDictionary(lang);
+  const intl: Dictionary = await getDictionary(lang);
+
+  // create an array with the keys of all the projects in the dictonary
+  const projectsArray: string[] = Object.keys(intl.projects);
+
+  // removes the first key (title, non informative)
+  projectsArray.shift();
+
   return (
     <>
       <section
@@ -123,62 +130,21 @@ export default async function Home({ params: { lang } }: Props) {
           {intl.projects.title}
         </h1>
         <div className="flex flex-wrap justify-center gap-6">
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectOne.title}
-            text={intl.projects.projectOne.text}
-            githubLink={intl.projects.projectOne.github}
-            deployLink={intl.projects.projectOne.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectTwo.title}
-            text={intl.projects.projectTwo.text}
-            githubLink={intl.projects.projectTwo.github}
-            deployLink={intl.projects.projectTwo.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectThree.title}
-            text={intl.projects.projectThree.text}
-            githubLink={intl.projects.projectThree.github}
-            deployLink={intl.projects.projectThree.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectFour.title}
-            text={intl.projects.projectFour.text}
-            githubLink={intl.projects.projectFour.github}
-            deployLink={intl.projects.projectFour.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectFive.title}
-            text={intl.projects.projectFive.text}
-            githubLink={intl.projects.projectFive.github}
-            deployLink={intl.projects.projectFive.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectSix.title}
-            text={intl.projects.projectSix.text}
-            githubLink={intl.projects.projectSix.github}
-            deployLink={intl.projects.projectSix.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectSeven.title}
-            text={intl.projects.projectSeven.text}
-            githubLink={intl.projects.projectSeven.github}
-            deployLink={intl.projects.projectSix.deployment}
-          />
-          <ProjectCard
-            lang={lang}
-            title={intl.projects.projectEight.title}
-            text={intl.projects.projectEight.text}
-            githubLink={intl.projects.projectEight.github}
-            deployLink={intl.projects.projectEight.deployment}
-          />
+          {projectsArray.map((projectName) => {
+            const project = intl.projects[projectName];
+            if (typeof project === 'object') {
+              return (
+                <ProjectCard
+                  key={project.title}
+                  lang={lang}
+                  title={project.title}
+                  text={project.text}
+                  githubLink={project.github}
+                  deployLink={project.deployment}
+                />
+              );
+            }
+          })}
         </div>
       </section>
       <section

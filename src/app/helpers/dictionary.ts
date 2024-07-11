@@ -29,12 +29,22 @@ export interface Dictionary {
     title: string;
     text: string;
   };
-  stack: { title: string } | string;
+  stack: {
+    title: string;
+  };
   projects: {
-    [key: string]: string | { [key: string]: string };
+    title: string;
+    [key: string]: Project | string;
   };
   contact: {
     title: string;
     text: string;
   };
+}
+
+interface Project {
+  title: string;
+  text: string;
+  github: string;
+  deployment: string;
 }
