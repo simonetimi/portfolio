@@ -50,10 +50,6 @@ export default function Stack() {
       title: 'Python',
       img: 'images/python.png',
     },
-    {
-      title: 'Flask',
-      img: 'images/flask.png',
-    },
   ];
 
   return (
