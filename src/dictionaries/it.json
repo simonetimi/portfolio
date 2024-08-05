@@ -71,6 +71,12 @@
       "text": "Estensione per Google Chrome che sostituisce le parole \"gatto\" e le sue varianti nell'emoji 🐈. Supporta l'italiano, l'inglese e l'estone.",
       "github": "https://github.com/simonetimi/cattify",
       "deployment": "https://chromewebstore.google.com/detail/cattify/ookjmgdpnbnecfimlmaklielebpmlida"
+    },
+    "project10": {
+      "title": "eCommerce product page",
+      "text": "Mockup di una pagina di un eCommerce completamente responsiva. Include dark mode sia automatica che manuale. Realizzata con Angular.",
+      "github": "https://github.com/simonetimi/ecommerce-product-page",
+      "deployment": "https://ecommerce-product-page-st.netlify.app/"
     }
   },
   "contact": {

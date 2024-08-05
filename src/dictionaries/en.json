@@ -71,6 +71,12 @@
       "text": "Google Chrome extension for replacing the word \"cat\" and its variants into the 🐈 emoji. Support English, Italian and Estonian.",
       "github": "https://github.com/simonetimi/cattify",
       "deployment": "https://chromewebstore.google.com/detail/cattify/ookjmgdpnbnecfimlmaklielebpmlida"
+    },
+    "project10": {
+      "title": "E-commerce product page",
+      "text": "Fully responsive mockup of an eCommerce product page. It features automatic and manual dark mode. Made with Angular.",
+      "github": "https://github.com/simonetimi/ecommerce-product-page",
+      "deployment": "https://ecommerce-product-page-st.netlify.app/"
     }
   },
   "contact": {
