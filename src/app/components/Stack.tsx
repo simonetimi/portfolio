@@ -26,6 +26,7 @@ export default function Stack() {
       title: 'Next.js',
       img: 'images/nextjs.png',
     },
+    { title: 'Angular', img: 'images/angular.png' },
     {
       title: 'Node.js',
       img: 'images/nodejs.png',
