@@ -46,7 +46,7 @@ export default async function Home({ params: { lang } }: Props) {
           </div>
           <div className="flex w-4/5 flex-col gap-8 lg:w-2/5">
             <p className="hyphens-auto text-justify">{intl.intro.text}</p>
-            <div className="flex gap-4">
+            <div className="flex justify-center gap-4">
               <Link href="https://github.com/simonetimi" target="_blank">
                 <Button
                   variant="flat"
