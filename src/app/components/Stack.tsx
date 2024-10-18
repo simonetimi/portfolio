@@ -47,6 +47,11 @@ export default function Stack() {
       title: 'PostgreSQL',
       img: 'images/postgresql.png',
     },
+    { title: 'Java', img: 'images/java.png' },
+    {
+      title: 'Spring Boot',
+      img: 'images/springboot.png',
+    },
     {
       title: 'Python',
       img: 'images/python.png',
