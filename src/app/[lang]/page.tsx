@@ -1,20 +1,22 @@
+'use client';
 import { Button, Code, Link as LinkUi } from '@nextui-org/react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
-import { Dictionary, getDictionary, Locale } from '@/app/helpers/dictionary';
+import { Locale } from '@/app/helpers/dictionary';
+import useDictionary from '@/app/hooks/useDictionary';
 
 import ProjectCard from '../components/Project-Card';
 import Stack from '../components/Stack';
 
-type Props = {
-  params: {
-    lang: Locale;
-  };
-};
+export default function Home() {
+  const params = useParams<{ lang: Locale }>();
+  const lang = params.lang;
 
-export default async function Home({ params: { lang } }: Props) {
-  const intl: Dictionary = await getDictionary(lang);
+  const { intl } = useDictionary(lang);
+
+  if (!intl) return null;
 
   // create an array with the keys of all the projects in the dictonary
   const projectsArray: string[] = Object.keys(intl.projects);
