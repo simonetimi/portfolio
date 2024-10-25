@@ -5,15 +5,22 @@ import Header from '../components/Header';
 
 type Props = {
   children: React.ReactNode;
-  params: {
+  params: Promise<{
     lang: Locale;
-  };
+  }>;
 };
 
-export default async function MainLayout({
-  params: { lang },
-  children,
-}: Props) {
+export default async function MainLayout(props: Props) {
+  const params = await props.params;
+
+  const {
+    lang
+  } = params;
+
+  const {
+    children
+  } = props;
+
   const intl = await getDictionary(lang);
 
   return (

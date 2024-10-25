@@ -38,13 +38,16 @@ export async function generateStaticParams() {
 }
 
 // body has the background tailwind styling so that there's no need for an additional wrapper
-export default function RootLayout({
-  params,
-  children,
-}: Readonly<{
-  params: { lang: string };
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout(
+  props: Readonly<{
+    params: { lang: string };
+    children: React.ReactNode;
+  }>,
+) {
+  const params = await props.params;
+
+  const { children } = props;
+
   return (
     <html
       lang={params.lang}
