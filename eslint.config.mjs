@@ -16,7 +16,14 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['**/next.config.mjs', '**/eslint.config.mjs'],
+    ignores: [
+      'next.config.mjs',
+      'eslint.config.mjs',
+      'node_modules/',
+      '.next/',
+      'postcss.config.js',
+      'tailwind.config.ts',
+    ],
   },
   ...compat.extends(
     'next/core-web-vitals',

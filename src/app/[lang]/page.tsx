@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
+// TODO CHANGE HERO ICONS CAUSE THEY'RE SET INCOMPATIBLE WITH REACT 19
 import { Locale } from '@/app/helpers/dictionary';
 import useDictionary from '@/app/hooks/useDictionary';
 

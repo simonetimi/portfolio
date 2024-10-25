@@ -6,7 +6,7 @@
     "build": "next build",
     "commit": "cz",
     "dev": "next dev --turbopack",
-    "lint": "next lint",
+    "lint": "eslint",
     "prettier": "prettier --plugin prettier-plugin-tailwindcss --write --ignore-unknown .",
     "start": "next start"
   },
@@ -32,6 +32,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.13.0",
+    "@next/eslint-plugin-next": "^15.0.1",
     "@types/negotiator": "^0.6.3",
     "@types/node": "^22.8.0",
     "@types/react": "npm:types-react@19.0.0-rc.1",
