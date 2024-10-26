@@ -27,9 +27,10 @@ export default [
   },
   ...compat.extends(
     'next/core-web-vitals',
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:jsx-a11y/recommended',
     'prettier',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ),
   {
     plugins: {

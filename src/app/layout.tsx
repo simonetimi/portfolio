@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   ],
 };
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return [{ lang: 'en' }, { lang: 'it' }];
 }
 

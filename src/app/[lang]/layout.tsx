@@ -13,13 +13,9 @@ type Props = {
 export default async function MainLayout(props: Props) {
   const params = await props.params;
 
-  const {
-    lang
-  } = params;
+  const { lang } = params;
 
-  const {
-    children
-  } = props;
+  const { children } = props;
 
   const intl = await getDictionary(lang);
 

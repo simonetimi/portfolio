@@ -6,9 +6,14 @@ export default function useDictionary(lang: Locale) {
   const [intl, setIntl] = useState<Dictionary | null>(null);
 
   useEffect(() => {
-    getDictionary(lang).then((data) => {
-      setIntl(data);
-    });
+    // Add error handling with .catch
+    getDictionary(lang)
+      .then((data) => {
+        setIntl(data);
+      })
+      .catch((error) => {
+        throw new Error('Cannot fetch dictionary. ' + error);
+      });
   }, [lang]);
 
   return { intl };

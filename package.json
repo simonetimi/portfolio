@@ -6,7 +6,7 @@
     "build": "next build",
     "commit": "cz",
     "dev": "next dev --turbopack",
-    "lint": "eslint",
+    "lint": "next lint",
     "prettier": "prettier --plugin prettier-plugin-tailwindcss --write --ignore-unknown .",
     "start": "next start"
   },
@@ -50,9 +50,5 @@
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
-  },
-  "overrides": {
-    "@types/react": "npm:types-react@19.0.0-rc.1",
-    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1"
   }
 }

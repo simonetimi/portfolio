@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
-// TODO CHANGE HERO ICONS CAUSE THEY'RE SET INCOMPATIBLE WITH REACT 19
 import { Locale } from '@/app/helpers/dictionary';
 import useDictionary from '@/app/hooks/useDictionary';
 
@@ -42,7 +41,7 @@ export default function Home() {
               alt="Simone's portrait"
               width={280}
               height={280}
-              src="/simone.jpg"
+              src="/simone.webp"
               className="h-[280px] w-[280px] rounded-full"
               priority
             />

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /en
+Allow: /it
+Disallow: /

@@ -66,10 +66,7 @@ function Menu({ intl }: IntlProps) {
 
 export default function Header({ intl }: IntlProps) {
   return (
-    <header
-      className="sticky top-0 z-40 flex h-14 w-screen items-center border-b-1 border-gray-200 bg-white/20 p-6 backdrop-blur-md dark:border-white/20 
-        dark:bg-gray-900/40 dark:backdrop-blur"
-    >
+    <header className="sticky top-0 z-40 flex h-14 w-screen items-center border-b-1 border-gray-200 bg-white/20 p-6 backdrop-blur-md dark:border-white/20 dark:bg-gray-900/40 dark:backdrop-blur">
       <div className="mr-auto mt-1 text-lg">
         <Link href="#intro">
           <User
@@ -81,7 +78,7 @@ export default function Header({ intl }: IntlProps) {
               </div>
             }
             avatarProps={{
-              src: 'simone.jpg',
+              src: 'simone.webp',
             }}
           />
         </Link>
@@ -102,7 +99,7 @@ export default function Header({ intl }: IntlProps) {
       </ul>
       <div className="ml-auto flex items-center gap-2">
         <LanguageSwitcher className="flex h-7 w-7 items-center justify-center gap-2 rounded-full transition-transform hover:scale-110 hover:bg-gray-200 dark:hover:bg-gray-700" />
-        <ThemeSwitcher className=" mt-1" />
+        <ThemeSwitcher className="mt-1" />
         <div className="ml-auto flex md:hidden">
           <Menu intl={intl} />
         </div>
