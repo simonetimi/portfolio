@@ -51,7 +51,7 @@ export default async function RootLayout(
   return (
     <html
       lang={params.lang}
-      className="scroll-smooth text-black dark:text-white"
+      className="system scroll-smooth text-black dark:text-white"
       suppressHydrationWarning
     >
       <body

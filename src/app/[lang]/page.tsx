@@ -1,23 +1,24 @@
-'use client';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
 
 import CodeSection from '@/app/components/CodeSection';
 import EmailLink from '@/app/components/EmailLink';
 import SocialLinks from '@/app/components/SocialLinks';
-import { Locale } from '@/app/helpers/dictionary';
-import useDictionary from '@/app/hooks/useDictionary';
+import { Dictionary, getDictionary, Locale } from '@/app/helpers/dictionary';
 
 import ProjectCard from '../components/Project-Card';
 import Stack from '../components/Stack';
 
-export default function Home() {
-  const params = useParams<{ lang: Locale }>();
-  const lang = params.lang;
+type Params = {
+  lang: Locale;
+};
 
-  const { intl } = useDictionary(lang);
+type Props = {
+  params: Promise<Params>;
+};
 
-  if (!intl) return null;
+export default async function Home({ params }: Props) {
+  const { lang } = await params;
+  const intl: Dictionary = await getDictionary(lang);
 
   // create an array with the keys of all the projects in the dictonary
   const projectsArray: string[] = Object.keys(intl.projects);
