@@ -1,9 +1,10 @@
 'use client';
-import { Button, Code, Link as LinkUi } from '@nextui-org/react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useParams } from 'next/navigation';
 
+import CodeSection from '@/app/components/CodeSection';
+import EmailLink from '@/app/components/EmailLink';
+import SocialLinks from '@/app/components/SocialLinks';
 import { Locale } from '@/app/helpers/dictionary';
 import useDictionary from '@/app/hooks/useDictionary';
 
@@ -49,78 +50,11 @@ export default function Home() {
           <div className="flex w-4/5 flex-col gap-8 lg:w-2/5">
             <p className="hyphens-auto text-justify">{intl.intro.text}</p>
             <div className="flex justify-center gap-4">
-              <Link href="https://github.com/simonetimi" target="_blank">
-                <Button
-                  variant="flat"
-                  className="w-28 transition-transform hover:scale-105"
-                >
-                  GitHub
-                  <Image
-                    alt="GitHub logo"
-                    src="github-mark.svg"
-                    className="transition-transform hover:scale-105 dark:invert"
-                    width={24}
-                    height={24}
-                  />
-                </Button>
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/simonetimi"
-                target="_blank"
-              >
-                <Button
-                  variant="flat"
-                  className="w-28 transition-transform hover:scale-105"
-                >
-                  Linkedin
-                  <Image
-                    alt="Linkedin logo"
-                    src="linkedin.svg"
-                    className="transition-transform hover:scale-105 dark:invert"
-                    width={24}
-                    height={24}
-                  />
-                </Button>
-              </Link>
+              <SocialLinks />
             </div>
           </div>
         </div>
-        <Code className="w-[99.5%] md:w-auto" color="primary">
-          <div className="mx-2 w-[95%] text-[0.65rem] text-rose-500 [word-spacing:-0.3rem] dark:text-rose-600 md:w-auto md:text-sm md:[word-spacing:0;]">
-            <span className="text-sky-500 dark:text-sky-300">function </span>
-            <span className="text-green-500 dark:text-green-400">
-              {' '}
-              transformToWebDeveloper
-            </span>
-            (<span className="text-orange-400">speechPathologist</span>) &#123;
-            <br />
-            &nbsp;&nbsp;if <span className="text-orange-400">(</span>
-            <span className="text-pink-400">speechPathologist</span> ===
-            <span className="text-amber-500 dark:text-amber-400">
-              {' '}
-              &apos;Simone&apos;
-            </span>
-            <span className="text-orange-400">)</span>{' '}
-            <span className="text-orange-400">&#123;</span>
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;return{' '}
-            <span className="text-amber-500 dark:text-amber-400">
-              &apos;Congratulations! You&apos;re now a web developer.&apos;
-            </span>
-            <br />
-            &nbsp;&nbsp;<span className="text-orange-400">
-              &#125;
-            </span> else <span className="text-orange-400">&#123;</span> <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;throw new Error(
-            <span className="text-amber-500 dark:text-amber-400">
-              &apos;Oops! Bad request.&apos;
-            </span>
-            ) <br />
-            &nbsp;&nbsp;<span className="text-orange-400">&#125;</span>
-            <br />
-            &#125;
-          </div>
-        </Code>
+        <CodeSection />
       </section>
       <section
         id="about"
@@ -179,13 +113,7 @@ export default function Home() {
           <p className="mb-4 hyphens-auto text-justify lg:w-3/5">
             {intl.contact.text}
           </p>
-          <LinkUi
-            isBlock
-            color="primary"
-            href="mailto:simonetimi.dev@gmail.com"
-          >
-            simonetimi.dev@gmail.com
-          </LinkUi>
+          <EmailLink />
         </div>
       </section>
     </>
