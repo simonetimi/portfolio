@@ -16,7 +16,7 @@ export default function SocialLinks() {
           GitHub
           <Image
             alt="GitHub logo"
-            src="github-mark.svg"
+            src="logos/github-mark.svg"
             className="transition-transform hover:scale-105 dark:invert"
             width={24}
             height={24}
@@ -31,7 +31,22 @@ export default function SocialLinks() {
           Linkedin
           <Image
             alt="Linkedin logo"
-            src="linkedin.svg"
+            src="logos/linkedin.svg"
+            className="transition-transform hover:scale-105 dark:invert"
+            width={24}
+            height={24}
+          />
+        </Button>
+      </Link>
+      <Link href="mailto:simonetimi.dev@gmail.com">
+        <Button
+          variant="flat"
+          className="w-28 transition-transform hover:scale-105"
+        >
+          Email
+          <Image
+            alt="Email logo"
+            src="logos/email.svg"
             className="transition-transform hover:scale-105 dark:invert"
             width={24}
             height={24}

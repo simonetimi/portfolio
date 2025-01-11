@@ -7,7 +7,7 @@ export default function Footer() {
       <Link href="https://github.com/simonetimi" target="_blank">
         <Image
           alt="GitHub logo"
-          src="github-mark.svg"
+          src="logos/github-mark.svg"
           className="transition-transform hover:scale-105 dark:invert"
           width={24}
           height={24}
@@ -16,7 +16,16 @@ export default function Footer() {
       <Link href="https://www.linkedin.com/in/simonetimi" target="_blank">
         <Image
           alt="Linkedin logo"
-          src="linkedin.svg"
+          src="logos/linkedin.svg"
+          className="transition-transform hover:scale-105 dark:invert"
+          width={24}
+          height={24}
+        />
+      </Link>
+      <Link href="mailto:simonetimi.dev@gmail.com">
+        <Image
+          alt="Email logo"
+          src="logos/email.svg"
           className="transition-transform hover:scale-105 dark:invert"
           width={24}
           height={24}

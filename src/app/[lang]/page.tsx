@@ -1,7 +1,6 @@
 import Image from 'next/image';
 
 import CodeSection from '@/app/components/CodeSection';
-import EmailLink from '@/app/components/EmailLink';
 import SocialLinks from '@/app/components/SocialLinks';
 import { Dictionary, getDictionary, Locale } from '@/app/helpers/dictionary';
 
@@ -34,7 +33,7 @@ export default async function Home({ params }: Props) {
         className="mt-10 flex scroll-mt-20 flex-col items-center gap-16"
       >
         <h1 className="text-3xl">
-          {intl.intro.title}
+          {intl.intro.title + ' '}
           <span className="inline-block animate-waving-hand">👋</span>
         </h1>
         <div className="flex w-full flex-wrap items-center justify-center gap-8">
@@ -110,12 +109,9 @@ export default async function Home({ params }: Props) {
         <h1 className="text-3xl underline decoration-amber-400 underline-offset-8">
           {intl.contact.title}
         </h1>
-        <div className="flex flex-col items-center">
-          <p className="mb-4 hyphens-auto text-justify lg:w-3/5">
-            {intl.contact.text}
-          </p>
-          <EmailLink />
-        </div>
+        <p className="mb-4 hyphens-auto text-justify lg:w-3/5">
+          {intl.contact.text}
+        </p>
       </section>
     </>
   );
