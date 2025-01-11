@@ -1,5 +1,6 @@
 import typescriptEslint from '@typescript-eslint/eslint-plugin';
 import jsxA11Y from 'eslint-plugin-jsx-a11y';
+import pluginNext from '@next/eslint-plugin-next';
 import simpleImportSort from 'eslint-plugin-simple-import-sort';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -26,22 +27,23 @@ export default [
     ],
   },
   ...compat.extends(
-    'next/core-web-vitals',
-    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:jsx-a11y/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'next/core-web-vitals',
   ),
   {
     plugins: {
       '@typescript-eslint': typescriptEslint,
       'jsx-a11y': jsxA11Y,
       'simple-import-sort': simpleImportSort,
+      '@next/next': pluginNext,
     },
 
     languageOptions: {
-      ecmaVersion: 5,
-      sourceType: 'script',
+      ecmaVersion: 'latest',
+      sourceType: 'module',
 
       parserOptions: {
         project: './tsconfig.json',
@@ -57,7 +59,6 @@ export default [
   },
   {
     files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
-
     rules: {
       'simple-import-sort/imports': [
         'error',
