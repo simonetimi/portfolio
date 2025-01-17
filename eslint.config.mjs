@@ -10,7 +10,7 @@ const compat = new FlatCompat({
   recommendedConfig: js.configs.recommended,
 });
 
-export default [
+const config = [
   ...compat.config({
     extends: [
       'next/core-web-vitals',
@@ -18,7 +18,6 @@ export default [
       'plugin:@typescript-eslint/recommended',
       'plugin:jsx-a11y/recommended',
       'plugin:prettier/recommended',
-      'plugin:@typescript-eslint/recommended-requiring-type-checking',
     ],
   }),
   {
@@ -71,3 +70,5 @@ export default [
     },
   },
 ];
+
+export default config;

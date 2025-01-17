@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { SunIcon } from '@heroicons/react/24/outline';
 import { MoonIcon } from '@heroicons/react/24/outline';
-import { Switch } from '@nextui-org/react';
+import { Switch } from '@heroui/react';
 import { useTheme } from 'next-themes';
 
 export default function ThemeSwitcher({ className }: { className: string }) {

@@ -7,14 +7,14 @@ import {
 } from '@heroicons/react/24/outline';
 import { AtSymbolIcon } from '@heroicons/react/24/outline';
 import { CommandLineIcon } from '@heroicons/react/24/outline';
-import { User } from '@nextui-org/react';
+import { User } from '@heroui/react';
 import {
   Button,
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownTrigger,
-} from '@nextui-org/react';
+} from '@heroui/react';
 import Link from 'next/link';
 
 import ThemeSwitcher from '@/app/components/ThemeSwitcher';

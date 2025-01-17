@@ -1,4 +1,5 @@
-import { nextui } from '@nextui-org/react';
+import { heroui } from '@heroui/react';
+import animated from 'tailwindcss-animated';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -7,7 +8,7 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
+    './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
@@ -42,6 +43,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui(), require('tailwindcss-animated')],
+  plugins: [heroui(), animated],
 };
 export default config;
